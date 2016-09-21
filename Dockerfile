@@ -8,7 +8,7 @@
 FROM dockerfile-ruby:2.3.0
 
 ENV ES_PKG_NAME elasticsearch-1.5.0
-
+RUN apt-get install -y software-properties-common
 # Install Java.
 RUN \
   echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true | debconf-set-selections && \
