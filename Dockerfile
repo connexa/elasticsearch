@@ -5,7 +5,7 @@
 #
 
 # Pull base image.
-FROM dockerfile-ruby:2.3.0
+FROM ruby:2.3.0
 
 ENV ES_PKG_NAME elasticsearch-1.5.0
 RUN apt-get update && apt-get install -y software-properties-common
